@@ -42,52 +42,52 @@ pageCursor()
 
 
 
-// function pageLoader() {
-//   document.body.classList.add('no-scroll'); // Add no-scroll class to body
+function pageLoader() {
+  document.body.classList.add('no-scroll'); // Add no-scroll class to body
 
-//   var tl = gsap.timeline();
-//   tl.from("#loader1 h3", {
-//       x: 40,
-//       opacity: 0,
-//       duration: 1,
-//       stagger: 0.2
-//   })
-//   .to("#loader1 h3", {
-//       opacity: 0,
-//       x: -10,
-//       duration: 1.5,
-//       stagger: 0.2
-//   })
-//   .to("#loader1", {
+  var tl = gsap.timeline();
+  tl.from("#loader1 h3", {
+      x: 40,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2
+  })
+  .to("#loader1 h3", {
+      opacity: 0,
+      x: -10,
+      duration: 1.5,
+      stagger: 0.2
+  })
+  .to("#loader1", {
    
-//       onComplete: function() {
-//           document.getElementById('loader1').style.display = 'none';
-//           document.getElementById('loader2').style.display = 'flex';
-//       }
-//   })
-//   .from("#loader2 h3", {
-//       x: 40,
-//       opacity: 0,
-//       duration: 1.5,
-//       stagger: 0.1
-//   })
-//   .to("#loader2 h3", {
-//       opacity: 0,
-//       x: -10,
-//       duration: 1.5,
-//       stagger: 0.1
-//   })
-//   .to("#loader2", {
-//       opacity: 0,
-//       duration: 0.5,
-//       onComplete: function() {
-//           document.getElementById('loader2').style.display = 'none';
-//           document.body.classList.remove('no-scroll'); // Remove no-scroll class from body
-//       }
-//   });
-// }
+      onComplete: function() {
+          document.getElementById('loader1').style.display = 'none';
+          document.getElementById('loader2').style.display = 'flex';
+      }
+  })
+  .from("#loader2 h3", {
+      x: 40,
+      opacity: 0,
+      duration: 1.5,
+      stagger: 0.1
+  })
+  .to("#loader2 h3", {
+      opacity: 0,
+      x: -10,
+      duration: 1.5,
+      stagger: 0.1
+  })
+  .to("#loader2", {
+      opacity: 0,
+      duration: 0.5,
+      onComplete: function() {
+          document.getElementById('loader2').style.display = 'none';
+          document.body.classList.remove('no-scroll'); // Remove no-scroll class from body
+      }
+  });
+}
 
-// pageLoader();
+pageLoader();
 
 // JavaScript code to show/hide the banner image based on the visibility of page 8
 
