@@ -190,7 +190,7 @@ nav li a {
 
 #page2 {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: #faf2f2;
 }
 
@@ -203,10 +203,8 @@ nav li a {
 .card-container {
     padding-top: 1rem;
     display: flex;
-    gap: 20px;
-    /* Space between cards */
-    flex-wrap: wrap;
-    /* Allow cards to wrap onto the next line */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
     justify-content: center;
 }
 
